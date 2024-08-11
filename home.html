@@ -25,17 +25,17 @@
         }
 </style>
 </head>
-<body>
-    <nav class="d-flex justify-content-between">
-        <h1 id="heading" class="ms-4"><i style="font-size: 33px;" class="fa-solid fa-user fa-beat-fade"></i>Welcome </h1>
-        <button class="btn btn-outline-secondary text-secondary me-4 h-25 mt-2" onclick="logout()">Logout</button>
+<body style="background-image: url('https://i.pinimg.com/736x/af/e2/ba/afe2baacb56c97a2e8b87fc177e94055.jpg'); background-size: cover;">
+    <nav class="d-flex justify-content-between bg-dark">
+        <h1 id="heading" class="ms-4 text-white"><i style="font-size: 33px; color: white;" class="fa-solid fa-user fa-beat-fade"></i>Welcome </h1>
+        <button class="btn btn-outline-secondary text-secondary me-4 h-25 mt-2 text-white" onclick="logout()">Logout</button>
     </nav>
 
     <section>
-       <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h1 style="font-size: 50px; text-align: center;">Smart Wallet</h1>
+       <div class="container d-flex flex-column justify-content-center align-items-center mt-5">
+        <h1 style="font-size: 70px; font-weight: 700; color: white; text-shadow: 2px 4px 6px rgba(255, 255, 255, 0.693); text-align: center;">Smart Wallet</h1>
         <hr class="w-75 mx-auto">
-        <div class="row">
+        <div class="row p-4 rounded-4" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
                 <div style="width: 300px;height: 300px;" class="d-flex flex-column justify-content-center align-items-center justify-content-between">
                     <div style="width: 200px; border-radius: 15px; height: 200px; background-color: antiquewhite;" class="d-flex flex-column justify-content-between align-items-center">
@@ -69,13 +69,13 @@
                 </div>
             </div>
         </div>
-        <button class="btn btn-warning mt-4" onclick="cleardata()">Clear All<i class="fa-solid fa-eraser"></i></button>
+        <button class="btn  mt-4" style="background-color:white; color: black; font-weight: 600;" onclick="cleardata()">Clear All<i class="fa-solid fa-eraser"></i></button>
 
 
-        <h1 class="text-center mt-5">Income and Expense Details</h1>
-        <hr class="w-75 mx-auto">
     </div>
-    <div class="container">
+    <div class="container p-4 rounded-4 mt-5" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+        <h1 class="text-center mt-2 " style="color: white; font-size: 48px; text-shadow: 2px 4px 6px rgba(255, 255, 255, 0.693);">Income and Expense Details</h1>
+        <hr class="w-75 mx-auto" style="border: 2px solid white;">
     <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
         <div class="col table-responsive">
             <h3 class="text-primary">Income</h3>
@@ -114,9 +114,9 @@
     </div>
 
 
-    <div class="d-flex justify-content-center mt-3">
+    <div class="d-flex justify-content-center mt-5">
         <div class="d-flex flex-column align-items-center"> 
-        <h2>Expense Pie Chart</h2>
+        <h2 style="color: white;">Expense Pie Chart</h2>
         <button class="btn btn-primary" onclick="ShowPiechart()">Show pie Chart</button>
         <div>
             <canvas id="inner_pie"></canvas>
